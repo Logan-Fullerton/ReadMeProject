@@ -1,28 +1,28 @@
 
-#s
+# ReadMe File Creator
 
-    ![badge](https://img.shields.io/badge/license-apache2.0-COLOR.svg)
+![badge](https://img.shields.io/badge/license-afl3.0-COLOR.svg)
 
-    ##DESCRIPTION
+## DESCRIPTION
 
-        s
+A console application that creates professional ReadMe files based on user input
 
-    ##INSTALLATION
-        s
+## INSTALLATION
+ N/A
 
-    ##USAGE
+## USAGE
 
-        s
+simply run node index.js and follow the prompts. The application takes care of the rest!
 
-    ##LICENSE
+## LICENSE
 
-        Apache2.0
+AFL3.0
 
-    ##GitHub USERNAME
+## GitHub USERNAME
 
-        s
+Logan-Fullerton
 
-    ##EMAIL
+## EMAIL
 
-        s  
+fullertonlogan@gmail.com  
 

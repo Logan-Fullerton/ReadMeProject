@@ -1,16 +1,4 @@
 
-function renderLicenseBadge(license) {
-  let licenseBadge = '';
-  switch (license) {
-    case 'Apache2.0':
-      licenseBadge = getLicenseBadgeUrl(license);
-      break;
-    default:
-      licenseBadge = '';
-      break;
-  }
-  return licenseBadge;
-}
 
 function getLicenseBadgeUrl(license) {
   const licenseName = license.toLowerCase().replace(/ /g,'-');
@@ -22,6 +10,5 @@ function getLicenseBadgeUrl(license) {
 
 
 module.exports = {
-  renderLicenseBadge,
   getLicenseBadgeUrl,
 };

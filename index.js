@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const renderLicenseBadge = require('./utils/generateMarkdown').renderLicenseBadge;
+const getLicenseBadgeUrl = require('./utils/generateMarkdown').getLicenseBadgeUrl;
 
 const questions = [
   {
@@ -61,36 +61,36 @@ function writeToFile(fileName, data) {
 
 function generateReadmeContent(answers) {
 
-  const licenseBadge = renderLicenseBadge(answers.license)
+  const licenseBadge = getLicenseBadgeUrl(answers.license)
  
     const content=
 `
-#${answers.projectName}
+# ${answers.projectName}
 
-    ${licenseBadge}
+${licenseBadge}
 
-    ##DESCRIPTION
+## DESCRIPTION
 
-        ${answers.description}
+${answers.description}
 
-    ##INSTALLATION
-        ${answers.installation}
+## INSTALLATION
+ ${answers.installation}
 
-    ##USAGE
+## USAGE
 
-        ${answers.usage}
+${answers.usage}
 
-    ##LICENSE
+## LICENSE
 
-        ${answers.license}
+${answers.license}
 
-    ##GitHub USERNAME
+## GitHub USERNAME
 
-        ${answers.githubUsername}
+${answers.githubUsername}
 
-    ##EMAIL
+## EMAIL
 
-        ${answers.email}  
+${answers.email}  
 
 `;
 return content;
